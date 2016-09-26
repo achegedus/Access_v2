@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A320" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Operations_Access" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,95 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JeffPhoto.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uIc-xT-lhr"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhb-Vl-sff" customClass="DesignableView" customModule="Spring">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="energycap_logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="mR1-zn-NwR">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="141" id="6Zm-W3-bWH"/>
+                                            <constraint firstAttribute="height" constant="38" id="iRa-ba-tWv"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xjc-gC-yyL" customClass="DesignableTextField" customModule="Spring">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="43" id="09I-tk-TtE"/>
+                                            <constraint firstAttribute="width" constant="251" id="yyl-xB-bpl"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wD9-Bg-e1e" customClass="DesignableButton" customModule="Spring">
+                                        <color key="backgroundColor" red="0.0" green="0.51372549020000002" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="251" id="Ri0-sX-sr0"/>
+                                            <constraint firstAttribute="height" constant="43" id="ogr-ZW-w3H"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.30588235289999999" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wD9-Bg-e1e" firstAttribute="top" secondItem="xjc-gC-yyL" secondAttribute="bottom" constant="10" id="5Yj-d7-wzl"/>
+                                    <constraint firstAttribute="width" constant="281" id="7So-E7-eEG"/>
+                                    <constraint firstAttribute="height" constant="281" id="9Tk-Vw-ROr"/>
+                                    <constraint firstItem="mR1-zn-NwR" firstAttribute="centerX" secondItem="bhb-Vl-sff" secondAttribute="centerX" id="dV7-vY-7Rr"/>
+                                    <constraint firstAttribute="bottom" secondItem="wD9-Bg-e1e" secondAttribute="bottom" constant="15" id="eeN-Sf-e2i"/>
+                                    <constraint firstItem="xjc-gC-yyL" firstAttribute="centerX" secondItem="bhb-Vl-sff" secondAttribute="centerX" id="fSB-j4-Z5E"/>
+                                    <constraint firstItem="mR1-zn-NwR" firstAttribute="top" secondItem="bhb-Vl-sff" secondAttribute="top" constant="34" id="h9v-4l-Ykj"/>
+                                    <constraint firstItem="wD9-Bg-e1e" firstAttribute="centerX" secondItem="bhb-Vl-sff" secondAttribute="centerX" id="ntU-ap-NUi"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GbD-Fv-trR" customClass="DesignableTextField" customModule="Spring">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="Qm2-9J-oBD"/>
+                                    <constraint firstAttribute="width" constant="251" id="zhO-hZ-ns6"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uIc-xT-lhr" secondAttribute="trailing" id="9A5-hS-3x1"/>
+                            <constraint firstItem="GbD-Fv-trR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E3v-Dj-K1Q"/>
+                            <constraint firstItem="bhb-Vl-sff" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O8u-5w-H1o"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uIc-xT-lhr" secondAttribute="bottom" id="Zq6-hb-EQT"/>
+                            <constraint firstItem="xjc-gC-yyL" firstAttribute="top" secondItem="GbD-Fv-trR" secondAttribute="bottom" constant="10" id="htF-3J-7jX"/>
+                            <constraint firstItem="uIc-xT-lhr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mTn-Dk-Y5P"/>
+                            <constraint firstItem="uIc-xT-lhr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="upm-qi-dQQ"/>
+                            <constraint firstItem="bhb-Vl-sff" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="y58-wy-2Lg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="JeffPhoto.jpg" width="5760" height="3840"/>
+        <image name="energycap_logo_white" width="141" height="38"/>
+    </resources>
 </document>

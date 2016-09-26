@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Auth0
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
