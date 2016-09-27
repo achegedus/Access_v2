@@ -24,6 +24,7 @@
 		163438341D99BC7E005C133F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163438331D99BC7E005C133F /* Assets.xcassets */; };
 		163438521D99BE57005C133F /* JeffPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 163438511D99BE57005C133F /* JeffPhoto.jpg */; };
 		163438541D99BE93005C133F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163438531D99BE93005C133F /* Assets.xcassets */; };
+		163438591D9AAB73005C133F /* TPKeyboardAvoiding in Resources */ = {isa = PBXBuildFile; fileRef = 163438581D9AAB73005C133F /* TPKeyboardAvoiding */; };
 		243BE155368E4E5DA9FA041C /* Pods_Operations_Access_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD677A2E371F19BD7FD179E4 /* Pods_Operations_Access_WatchKit_App.framework */; };
 		5EA8DE776599911A5E6147B6 /* Pods_Operations_Access_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59BA8268DF9708F43785948D /* Pods_Operations_Access_WatchKit_Extension.framework */; };
 		823F3CBA2657B5049356C711 /* Pods_Operations_AccessUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46B74F378202B0185B0FA40 /* Pods_Operations_AccessUITests.framework */; };
@@ -114,6 +115,7 @@
 		163438511D99BE57005C133F /* JeffPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JeffPhoto.jpg; sourceTree = "<group>"; };
 		163438531D99BE93005C133F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		163438551D99C0C4005C133F /* Auth0.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Auth0.framework; path = "../../Library/Developer/Xcode/DerivedData/Operations_Access-dmbdltaldobfwadfcbnkoirpplct/Build/Products/Debug-iphoneos/Auth0/Auth0.framework"; sourceTree = "<group>"; };
+		163438581D9AAB73005C133F /* TPKeyboardAvoiding */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TPKeyboardAvoiding; sourceTree = "<group>"; };
 		32C4EE263A5A50729F965020 /* Pods-Operations AccessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Operations AccessTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Operations AccessTests/Pods-Operations AccessTests.release.xcconfig"; sourceTree = "<group>"; };
 		59BA8268DF9708F43785948D /* Pods_Operations_Access_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Operations_Access_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C9D095C06D0C9061D82D86E /* Pods-Operations Access WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Operations Access WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Operations Access WatchKit App/Pods-Operations Access WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 		163437F11D99BC7E005C133F /* Operations Access */ = {
 			isa = PBXGroup;
 			children = (
+				163438571D9AAB67005C133F /* Libraries */,
 				163438501D99BE43005C133F /* Assets */,
 				163438491D99BDEF005C133F /* Modules */,
 				163437F21D99BC7E005C133F /* AppDelegate.swift */,
@@ -325,6 +328,14 @@
 				163438511D99BE57005C133F /* JeffPhoto.jpg */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		163438571D9AAB67005C133F /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				163438581D9AAB73005C133F /* TPKeyboardAvoiding */,
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 		5CCCCA398B7EDBECA513AD1A /* Frameworks */ = {
@@ -534,6 +545,7 @@
 				163438521D99BE57005C133F /* JeffPhoto.jpg in Resources */,
 				163438541D99BE93005C133F /* Assets.xcassets in Resources */,
 				163437F81D99BC7E005C133F /* Main.storyboard in Resources */,
+				163438591D9AAB73005C133F /* TPKeyboardAvoiding in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
